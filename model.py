@@ -46,7 +46,7 @@ class Model:
                 row[27] = str(cp.get())  # codigo postal
                 row[
                     33
-                ] = 'Ley Anexo I "E" Decreto 718/18 reg. Ley Provincial 5263 y mod.'  # agrego ley
+                ] = 'Ley'  # agrego ley
                 filas.append(row)
             return filas
 
@@ -61,8 +61,8 @@ class Model:
                     row[52] = Model.filtro_infractor(row[52])  # acorto el infractor
                     row[64] = Model.filtro_modelo(row[64])  # modifico el modelo
                     if check.get() == True:
-                        row[78] = "Agencia provincial de seguridad vial"  # constatador
-                        row[79] = "Alonso Alexis Mauro"  # firma
+                        row[78] = "Agencia"  # constatador
+                        row[79] = "firma"  # firma
                     else:
                         pass
                     row[83] = row[85]  # numero de lote
