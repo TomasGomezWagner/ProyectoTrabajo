@@ -25,7 +25,7 @@ except:
 def llenar_tabla():
     try:
         with open(
-            r"""C:\Users\Tom\Desktop\proyecto_trabajo_modificacion\csv\utiles\RN_AGENTES_INTERVINIENTES.csv""",
+            r"""C:\Users\Tom\Desktop\proyecto_trabajo_modificacion\csv\utiles\AGENTEScsv""",
             "r",
         ) as file:
             reader = csv.reader(file, delimiter=";")
